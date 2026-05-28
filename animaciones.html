@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #111;
+            color: blanchedalmond;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            padding: 40px 20px;
+        }
+        h2{
+            margin-bottom: 20px;
+            text-align: center;
+        }
+            
+         .section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
+         .led-container{
+            display: flex;
+            gap: 20px;
+
+         }
+         .led{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #444;
+            box-shadow: 0 0 5px #000;
+            animation: blink 1s infinite;
+         }
+         .led:nth-last-child(1){
+            background: red;
+            box-shadow: 0 0 10px red;
+            animation-delay: 0s;
+
+         }
+         .led:nth-last-child(2){
+            background: lime;
+            box-shadow: 0 0 10px lime;
+            animation-delay: 0.3s;
+         }
+         .led:nth-last-child(3){
+            background: cyan;
+            box-shadow: 0 0 10px cyan;
+            animation-delay: 0.6s;
+        }
+        @keyframes blink{
+            0%{
+                opacity: 0.2;
+                transform: scale(0.9);
+                box-shadow: 0 0 5px currentColor;
+
+            }
+            100%{
+                opacity: 1;
+                transform: scale(1.2);
+                box-shadow: 0 0 20px currentColor 0 0 40px;
+            }
+        }
+        .cat{
+            position: relative;
+            width: 140px;
+            height: 140px;
+            animation: floatCat 2s infinite ease-in-out;
+        }
+        .cat-face{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: #f5c16c;
+            border-radius: 50%;
+            top: 30px;
+            left: 20px;
+
+        }
+        .ear{
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            background: #f5c16c;
+            transform: rotate(45deg);
+            top: 10px;
+        }
+        .ear-left{
+            left: 20px;
+        }
+        .ear-right{
+            right: 20px;
+        }
+        
+    </style>
+    <div class="section">
+        <h2>Animación de luz led</h2>
+        <div class="led-container">
+            <div class="led"></div>
+            <div class="led"></div>
+            <div class="led"></div>
+       </div>
+    </div>
+    
+    <div class="section"></div>
+    <h2>Animación de gato</h2>
+    <div class="cat">
+        <div class="ear left"></div>
+        <div class="ear right"></div>
+        <div class="cat-face"></div>
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="nose"></div>
+        <div class="whisker left1"></div>
+        <div class="whisker left2"></div>
+        <div class="whisker right1"></div>
+        <div class="whisker right2"></div>
+    </div>
+
+    <div class="section"></div>
+    <h2>Animación de perro</h2>
+    <div class="dog"></div>
+    <div class="dog ear right"></div>
+    <div class="dog ear left"></div>
+    <div class="dog face"></div>
+    <div class="dog-eye left"></div>
+    <div class="dog-eye right"></div>
+    <div class="dog-nose"></div>
+    <div class="dog-mouth"></div>
+    <div class="tail"></div>
+</div>
+</body>
+</html>

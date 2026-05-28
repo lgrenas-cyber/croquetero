@@ -1,0 +1,29 @@
+ <div class="section">
+    <h2>Animación de gato</h2>
+    <div class="cat">
+      <div class="ear left"></div>
+      <div class="ear right"></div>
+      <div class="cat-face"></div>
+      <div class="eye left"></div>
+      <div class="eye right"></div>
+      <div class="nose"></div>
+      <div class="whisker left1"></div>
+      <div class="whisker left2"></div>
+      <div class="whisker right1"></div>
+      <div class="whisker right2"></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Animación de perro</h2>
+    <div class="dog">
+      <div class="dog-ear left"></div>
+      <div class="dog-ear right"></div>
+      <div class="dog-face"></div>
+      <div class="dog-eye left"></div>
+      <div class="dog-eye right"></div>
+      <div class="dog-nose"></div>
+      <div class="dog-mouth"></div>
+      <div class="tail"></div>
+    </div>
+  </div>
